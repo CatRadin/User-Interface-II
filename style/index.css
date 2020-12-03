@@ -251,6 +251,7 @@ header h1 {
 
 .row {
   background-color: #baf2e9;
+  margin-left: 60px;
 }
 
 header nav .nav {
@@ -264,7 +265,7 @@ header nav .nav {
   font-size: 3rem;
   display: inline-block;
   float: left;
-  margin: 0 10px;
+
   transition: 0.5s;
   color: white;
   border: 3px solid white;
