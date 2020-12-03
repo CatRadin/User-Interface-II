@@ -1,1 +1,496 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* This is where the css starts. Above is the background*/
+/* html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f2bac9;
+}
+
+.container {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+header h1 {
+  font-size: 9rem;
+  line-height: 1.2;
+  letter-spacing: -0.1rem;
+  color: white;
+  font-family: "Amatic SC", cursive;
+  font-family: "Poiret One", cursive;
+  text-align: left;
+  letter-spacing: 20px;
+}
+
+.row {
+  background-color: #baf2e9;
+  margin-left: 60px;
+}
+
+header nav .nav {
+  padding: 10px;
+  transition: 0.4s;
+  color: white;
+  text-decoration: none;
+  margin: 0 auto;
+  align-content: left;
+  color: white;
+  font-size: 3rem;
+ 
+
+  transition: 0.5s;
+  color: white;
+  border: 3px solid white;
+}
+
+header nav .nav:hover {
+  background-color: #baf2e9;
+  border-radius: 10px;
+  padding: 10px 10px;
+  transform: rotate(-10deg);
+}
+
+.container2 {
+  background-color: #baf2e9;
+  display: flex;
+  margin-top: 80px;
+  height: 100%;
+  padding: 2rem;
+}
+
+.cute-pic {
+  height: 70%;
+} */
+
+/* html {
+  font-size: 1.2rem;
+}
+
+body {
+  background-color: #f2bac9;
+  /* display: flex;
+  flex-flow: column warp;
+  height: 100%;
+  width: 100%; */
+/* }
+header {
+  border: 2px solid black;
+  display: flex;
+  height: 20vh;
+  flex-flow: column wrap;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  letter-spacing: -0.1rem;
+  color: white;
+  font-family: "Amatic SC", cursive;
+  font-family: "Poiret One", cursive;
+  text-align: left;
+  letter-spacing: 20px;
+  padding-bottom: 2rem;
+}
+
+header nav {
+  margin-left: 80px;
+}
+
+header nav a {
+  color: white;
+  border: 2px solid white;
+  transition: 0.4s;
+  color: white;
+  text-decoration: none;
+  justify-content: flex-start;
+  color: white;
+  font-size: 1.3rem;
+}
+
+header nav a:hover {
+  background-color: #baf2e9;
+  border-radius: 10px;
+  padding: 10px 10px;
+  transform: rotate(-10deg);
+}
+
+.container2 {
+  border: 2px solid black;
+  display: flex;
+  height: 500px;
+
+  flex-flow: column wrap;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+
+.cute-pic {
+}
+
+.cute-pic {
+  width: 30%;
+  display: flex;
+} */
+
+* {
+  font-family: "Nanum Gothic", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #baf2e9;
+  background-color: #f2bac9;
+}
+
+header {
+  background-color: #f2bac9;
+  background-color: #baf2e9;
+
+  margin-bottom: 2rem;
+}
+
+section {
+}
+
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 0 0 5rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav-item {
+  display: flex;
+  font-size: 2rem;
+  background: white;
+  text-decoration: none;
+  color: #8380b6;
+  margin: 2rem 0rem;
+  width: 12rem;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.nav-item:hover {
+  background: #8380b6;
+  color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+h1 {
+  font-size: 9rem;
+  line-height: 1.2;
+  letter-spacing: -0.1rem;
+  color: white;
+  font-family: "Amatic SC", cursive;
+  font-family: "Poiret One", cursive;
+  text-align: left;
+  letter-spacing: 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 1rem 0 0 0;
+}
+
+.h2-other {
+  font-size: 2.5rem;
+  margin: 1rem auto 0 auto;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 2rem 0 0 0;
+  text-align: center;
+}
+
+a,
+p {
+  font-size: 1.6rem;
+  width: 90%;
+  text-align: justify;
+  margin: 1rem 0 0 0;
+  text-decoration: none;
+  color: rgb(70, 66, 66);
+}
+
+a:hover {
+  color: green;
+  font-weight: bold;
+  animation: button-rotate 0.2s alternate 2;
+}
+
+@keyframes button-rotate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
+}
+
+.button {
+  display: flex;
+  font-size: 1.6rem;
+  background: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Nanum Gothic", sans-serif;
+  color: #8380b6;
+  margin: 2rem 0rem;
+  width: 12rem;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background: #8380b6;
+  color: white;
+}
+
+#hero {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#hero div {
+  width: 50%;
+}
+
+.hero-image {
+  display: block;
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  max-width: 500px;
+}
+
+.intro-text {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  width: 100%;
+  padding: 200px;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: -0.1rem;
+  color: white;
+  font-family: "Amatic SC", cursive;
+  font-family: "Poiret One", cursive;
+  text-align: left;
+  letter-spacing: 10px;
+  font-weight: bold;
+}
+
+.intro-text p {
+  color: white;
+}
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  width: auto;
+  background-color: #baf2e9;
+}
+
+footer div {
+  text-align: center;
+}
+
+.portfolio {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  width:100%;
+  
+}
+
+.image-caption {
+    /* background:url(https://picsum.photos/200);
+    height:200px;
+    width: 200px; */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  font-family: "Nanum Gothic", sans-serif;
+  color: white;
+  
+}
+
+.image-caption p {
+  text-align: center;
+  color: white;
+}
+
+.image-caption img {
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+  height: 50%;
