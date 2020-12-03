@@ -463,15 +463,25 @@ footer div {
 .portfolio {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   margin: 2rem 0;
+  width:100%;
+  
 }
 
 .image-caption {
+    /* background:url(https://picsum.photos/200);
+    height:200px;
+    width: 200px; */
   display: flex;
   flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
   margin: 1rem auto;
   font-family: "Nanum Gothic", sans-serif;
   color: white;
+  
 }
 
 .image-caption p {
@@ -483,5 +493,4 @@ footer div {
   margin: 0;
   padding: 0;
   object-fit: contain;
-  height: auto;
-}
+  height: 50%;
