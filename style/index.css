@@ -132,96 +132,14 @@ table {
 * {
   box-sizing: border-box;
 }
-:root {
-  --wave: rgb(255, 255, 255);
-  --bg: #f2bac9;
-}
-body {
-  min-height: 100vh;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.5em;
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  color: #222;
-  box-sizing: border-box;
-}
-main {
-  background: var(--bg);
-  -webkit-box-flex: 1;
-  flex: 1;
-  width: 100vw;
-  position: relative;
-  overflow: hidden;
-}
-.wave {
-  position: absolute;
-  bottom: -5%;
-  left: 0;
-  right: 0;
-}
-.wave:nth-of-type(1) {
-  --speed: 30;
-  --opacity: 0.3;
-  --height: 12;
-  --width: 400;
-}
-.wave:nth-of-type(2) {
-  --speed: 45;
-  --opacity: 0.6;
-  --height: 10;
-  --width: 300;
-}
-.wave:nth-of-type(3) {
-  --speed: 15;
-  --opacity: 1;
-  --height: 6;
-  --width: 200;
-}
-footer {
-  background: var(--wave);
-  -webkit-box-flex: 1;
-  flex: 1;
-}
-.wave {
-  background-image: url("https://assets.codepen.io/605876/wave--infinite.svg");
-  height: calc(var(--height, 0) * 1vh);
-  width: calc(var(--width, 0) * 1vw);
-  opacity: var(--opacity);
-  -webkit-animation: wave calc(var(--speed, 0) * 1s) infinite linear;
-  animation: wave calc(var(--speed, 0) * 1s) infinite linear;
-}
-@media (max-width: 480px) {
-  .wave {
-    height: calc(var(--height, 0) * 0.75vh);
-  }
-}
-@-webkit-keyframes wave {
-  to {
-    -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-  }
-}
-@keyframes wave {
-  to {
-    -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-  }
-}
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
 
 /* This is where the css starts. Above is the background*/
-html {
+/* html {
   font-size: 62.5%;
+}
+
+body {
+  background-color: #f2bac9;
 }
 
 .container {
@@ -263,8 +181,7 @@ header nav .nav {
   align-content: left;
   color: white;
   font-size: 3rem;
-  display: inline-block;
-  float: left;
+ 
 
   transition: 0.5s;
   color: white;
@@ -288,4 +205,76 @@ header nav .nav:hover {
 
 .cute-pic {
   height: 70%;
+} */
+
+html {
+  font-size: 1.2rem;
+}
+
+body {
+  background-color: #f2bac9;
+  /* display: flex;
+  flex-flow: column warp;
+  height: 100%;
+  width: 100%; */
+}
+header {
+  border: 2px solid black;
+  display: flex;
+  height: 20vh;
+  flex-flow: column wrap;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  letter-spacing: -0.1rem;
+  color: white;
+  font-family: "Amatic SC", cursive;
+  font-family: "Poiret One", cursive;
+  text-align: left;
+  letter-spacing: 20px;
+  padding-bottom: 2rem;
+}
+
+header nav {
+  margin-left: 80px;
+}
+
+header nav a {
+  color: white;
+  border: 2px solid white;
+  transition: 0.4s;
+  color: white;
+  text-decoration: none;
+  justify-content: flex-start;
+  color: white;
+  font-size: 1.3rem;
+}
+
+header nav a:hover {
+  background-color: #baf2e9;
+  border-radius: 10px;
+  padding: 10px 10px;
+  transform: rotate(-10deg);
+}
+
+.container2 {
+  border: 2px solid black;
+  display: flex;
+  height: 500px;
+
+  flex-flow: column wrap;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+
+.cute-pic {
+}
+
+.cute-pic {
+  width: 30%;
+  display: flex;
 }
