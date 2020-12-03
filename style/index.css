@@ -1,1 +1,290 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  --wave: rgb(255, 255, 255);
+  --bg: #f2bac9;
+}
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #222;
+  box-sizing: border-box;
+}
+main {
+  background: var(--bg);
+  -webkit-box-flex: 1;
+  flex: 1;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+.wave {
+  position: absolute;
+  bottom: -5%;
+  left: 0;
+  right: 0;
+}
+.wave:nth-of-type(1) {
+  --speed: 30;
+  --opacity: 0.3;
+  --height: 12;
+  --width: 400;
+}
+.wave:nth-of-type(2) {
+  --speed: 45;
+  --opacity: 0.6;
+  --height: 10;
+  --width: 300;
+}
+.wave:nth-of-type(3) {
+  --speed: 15;
+  --opacity: 1;
+  --height: 6;
+  --width: 200;
+}
+footer {
+  background: var(--wave);
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+.wave {
+  background-image: url("https://assets.codepen.io/605876/wave--infinite.svg");
+  height: calc(var(--height, 0) * 1vh);
+  width: calc(var(--width, 0) * 1vw);
+  opacity: var(--opacity);
+  -webkit-animation: wave calc(var(--speed, 0) * 1s) infinite linear;
+  animation: wave calc(var(--speed, 0) * 1s) infinite linear;
+}
+@media (max-width: 480px) {
+  .wave {
+    height: calc(var(--height, 0) * 0.75vh);
+  }
+}
+@-webkit-keyframes wave {
+  to {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+@keyframes wave {
+  to {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
+
+/* This is where the css starts. Above is the background*/
+html {
+  font-size: 62.5%;
+}
+
+.container {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+header h1 {
+  font-size: 9rem;
+  line-height: 1.2;
+  letter-spacing: -0.1rem;
+  color: white;
+  font-family: "Amatic SC", cursive;
+  font-family: "Poiret One", cursive;
+  text-align: left;
+  letter-spacing: 20px;
+}
+
+.row {
+  background-color: #baf2e9;
+}
+
+header nav .nav {
+  padding: 10px;
+  transition: 0.4s;
+  color: white;
+  text-decoration: none;
+  margin: 0 auto;
+  align-content: left;
+  color: white;
+  font-size: 3rem;
+  display: inline-block;
+  float: left;
+  margin: 0 10px;
+  transition: 0.5s;
+  color: white;
+  border: 3px solid white;
+}
+
+header nav .nav:hover {
+  background-color: #baf2e9;
+  border-radius: 10px;
+  padding: 10px 10px;
+  transform: rotate(-10deg);
+}
+
+.container2 {
+  background-color: #baf2e9;
+  display: flex;
+  margin-top: 80px;
+  height: 100%;
+  padding: 2rem;
+}
+
+.cute-pic {
+  height: 70%;
+}
