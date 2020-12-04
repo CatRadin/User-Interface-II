@@ -296,11 +296,6 @@ body {
 header {
   background-color: #f2bac9;
   background-color: #baf2e9;
-
-  margin-bottom: 2rem;
-}
-
-section {
 }
 
 nav {
@@ -336,10 +331,11 @@ h1 {
   line-height: 1.2;
   letter-spacing: -0.1rem;
   color: white;
-  font-family: "Amatic SC", cursive;
+
   font-family: "Poiret One", cursive;
   text-align: left;
   letter-spacing: 20px;
+  padding: 20px;
 }
 
 h2 {
@@ -363,7 +359,7 @@ a,
 p {
   font-size: 1.6rem;
   width: 90%;
-  text-align: justify;
+  text-align: flex-start;
   margin: 1rem 0 0 0;
   text-decoration: none;
   color: rgb(70, 66, 66);
@@ -411,16 +407,16 @@ a:hover {
 }
 
 #hero div {
-  width: 50%;
+  width: 60%;
 }
 
 .hero-image {
-  display: block;
-  width: 80%;
   height: auto;
   object-fit: contain;
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 700px;
+  max-height: 700px;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .intro-text {
@@ -433,7 +429,7 @@ a:hover {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 4rem;
   line-height: 1.2;
   letter-spacing: -0.1rem;
   color: white;
@@ -446,6 +442,7 @@ h2 {
 
 .intro-text p {
   color: white;
+  font-size: 2rem;
 }
 footer {
   display: flex;
@@ -485,7 +482,11 @@ footer div {
 
 .image-caption p {
   text-align: center;
-  color: white;
+  color: black;
+  background: #baf2e9;
+  width: 23%;
+  border-radius: 5px;
+  font-family: "Major Mono Display", monospace;
 }
 
 .image-caption img {
