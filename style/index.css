@@ -471,9 +471,6 @@ footer div {
 }
 
 .image-caption {
-  /* background:url(https://picsum.photos/200);
-    height:200px;
-    width: 200px; */
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
