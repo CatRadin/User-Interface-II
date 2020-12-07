@@ -133,152 +133,6 @@ table {
   box-sizing: border-box;
 }
 
-/* This is where the css starts. Above is the background*/
-/* html {
-  font-size: 62.5%;
-}
-
-body {
-  background-color: #f2bac9;
-}
-
-.container {
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 2rem;
-  font-weight: 300;
-}
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
-header h1 {
-  font-size: 9rem;
-  line-height: 1.2;
-  letter-spacing: -0.1rem;
-  color: white;
-  font-family: "Amatic SC", cursive;
-  font-family: "Poiret One", cursive;
-  text-align: left;
-  letter-spacing: 20px;
-}
-
-.row {
-  background-color: #baf2e9;
-  margin-left: 60px;
-}
-
-header nav .nav {
-  padding: 10px;
-  transition: 0.4s;
-  color: white;
-  text-decoration: none;
-  margin: 0 auto;
-  align-content: left;
-  color: white;
-  font-size: 3rem;
- 
-
-  transition: 0.5s;
-  color: white;
-  border: 3px solid white;
-}
-
-header nav .nav:hover {
-  background-color: #baf2e9;
-  border-radius: 10px;
-  padding: 10px 10px;
-  transform: rotate(-10deg);
-}
-
-.container2 {
-  background-color: #baf2e9;
-  display: flex;
-  margin-top: 80px;
-  height: 100%;
-  padding: 2rem;
-}
-
-.cute-pic {
-  height: 70%;
-} */
-
-/* html {
-  font-size: 1.2rem;
-}
-
-body {
-  background-color: #f2bac9;
-  /* display: flex;
-  flex-flow: column warp;
-  height: 100%;
-  width: 100%; */
-/* }
-header {
-  border: 2px solid black;
-  display: flex;
-  height: 20vh;
-  flex-flow: column wrap;
-  box-sizing: border-box;
-  padding-bottom: 20px;
-}
-
-h1 {
-  font-size: 3rem;
-  line-height: 1.2;
-  letter-spacing: -0.1rem;
-  color: white;
-  font-family: "Amatic SC", cursive;
-  font-family: "Poiret One", cursive;
-  text-align: left;
-  letter-spacing: 20px;
-  padding-bottom: 2rem;
-}
-
-header nav {
-  margin-left: 80px;
-}
-
-header nav a {
-  color: white;
-  border: 2px solid white;
-  transition: 0.4s;
-  color: white;
-  text-decoration: none;
-  justify-content: flex-start;
-  color: white;
-  font-size: 1.3rem;
-}
-
-header nav a:hover {
-  background-color: #baf2e9;
-  border-radius: 10px;
-  padding: 10px 10px;
-  transform: rotate(-10deg);
-}
-
-.container2 {
-  border: 2px solid black;
-  display: flex;
-  height: 500px;
-
-  flex-flow: column wrap;
-  box-sizing: border-box;
-  padding-top: 20px;
-}
-
-.cute-pic {
-}
-
-.cute-pic {
-  width: 30%;
-  display: flex;
-} */
-
 * {
   box-sizing: border-box;
   max-width: 100%;
@@ -367,7 +221,7 @@ p {
 
 .button {
   display: flex;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   background: white;
   text-decoration: none;
   border-radius: 5px;
@@ -395,6 +249,7 @@ p {
 #hero img {
   height: 70rem;
   padding: 1rem;
+  object-fit: cover;
 }
 
 .intro-text {
@@ -509,12 +364,20 @@ footer div a img:hover {
   }
 
   #hero img {
-    height: 50%;
-    padding-top: 3rem;
+    height: 70rem;
+    padding-top: 2rem;
+    object-fit: cover;
   }
   #hero div {
     padding: 0;
     padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #hero div p,
+  #hero div h2 {
     text-align: center;
   }
 
@@ -530,13 +393,25 @@ footer div a img:hover {
 }
 
 /*Max Width of 500px*/
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   h1 {
     font-size: 5rem;
     padding-bottom: 1rem;
   }
   nav {
     padding-bottom: 1rem;
+  }
+
+  #hero div {
+    padding: 0;
+    text-align: center;
+  }
+  #hero img {
+    height: 50rem;
+    object-fit: cover;
+  }
+  #hero div p {
+    padding-bottom: 2rem;
   }
   .image-caption img {
     height: 20rem;
