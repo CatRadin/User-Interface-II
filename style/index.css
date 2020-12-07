@@ -291,11 +291,13 @@ html {
 body {
   background-color: #baf2e9;
   background-color: #f2bac9;
+  background-color: #6d6875;
 }
 
 header {
   background-color: #f2bac9;
   background-color: #baf2e9;
+  background-color: #b5838d;
 }
 
 nav {
@@ -402,8 +404,7 @@ a:hover {
 
 #hero {
   display: flex;
-  flex-flow: row wrap;
-  align-items: flex-end;
+  flex-flow: row;
 }
 
 #hero div {
@@ -411,14 +412,17 @@ a:hover {
 }
 
 .hero-image {
-  height: auto;
-  object-fit: contain;
-  max-width: 700px;
-  max-height: 700px;
+  max-width: 40%;
+  max-height: 50%;
   padding: 20px;
   border-radius: 5px;
+  padding-bottom: 200px;
 }
 
+#hero-2 {
+  display: flex;
+  flex-flow: column wrap;
+}
 .intro-text {
   display: flex;
   flex-flow: column wrap;
@@ -444,6 +448,7 @@ h2 {
   color: white;
   font-size: 2rem;
 }
+
 footer {
   display: flex;
   flex-flow: column wrap;
@@ -452,6 +457,7 @@ footer {
   justify-items: center;
   width: auto;
   background-color: #baf2e9;
+  background-color: #b5838d;
 }
 
 footer div {
@@ -482,8 +488,9 @@ footer div {
 
 .image-caption p {
   text-align: center;
-  color: black;
+  color: white;
   background: #baf2e9;
+  background: #b5838d;
   width: 23%;
   border-radius: 5px;
   font-family: "Major Mono Display", monospace;
