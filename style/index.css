@@ -665,3 +665,19 @@ footer div a img:hover {
 }
 
 /*Max Width of 500px*/
+@media (max-width: 800px) {
+  h1 {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+  }
+  nav {
+    padding-bottom: 1rem;
+  }
+  .image-caption img {
+    height: 20rem;
+  }
+
+  .image-caption p {
+    width: 45%;
+  }
+}
