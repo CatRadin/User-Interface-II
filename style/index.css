@@ -287,17 +287,14 @@ header nav a:hover {
 
 html {
   font-size: 62.5%;
+  line-height: 2;
 }
 
 body {
-  background-color: #baf2e9;
-  background-color: #f2bac9;
   background-color: #6d6875;
 }
 
 header {
-  background-color: #f2bac9;
-  background-color: #baf2e9;
   background-color: #b5838d;
 }
 
@@ -332,7 +329,6 @@ h1 {
   line-height: 1.2;
   letter-spacing: -0.1rem;
   color: white;
-
   font-family: "Poiret One", cursive;
   text-align: left;
   letter-spacing: 20px;
@@ -407,7 +403,6 @@ p {
   align-items: flex-start;
   width: 100%;
   padding: 20rem;
-  align-self: flex-start;
 }
 
 h2 {
@@ -434,7 +429,6 @@ footer {
   align-content: center;
   justify-items: center;
   width: auto;
-  background-color: #baf2e9;
   background-color: #b5838d;
 }
 
@@ -492,135 +486,6 @@ footer div a img:hover {
   }
   to {
     transform: rotate(180deg);
-  }
-}
-
-.about {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.about p {
-  margin: 2rem auto;
-  width: 80%;
-}
-
-.about img {
-  width: 80%;
-  max-width: 1024px;
-  object-fit: contain;
-}
-
-.projects {
-  display: flex;
-  flex-flow: column nowrap;
-  margin: 1rem auto;
-  width: 30rem;
-}
-
-.projects img {
-  margin: 0;
-  padding: 0;
-  object-fit: contain;
-  height: auto;
-}
-
-.contact p:first-of-type {
-  text-align: left;
-  margin: 0 0 0 2rem;
-  width: 100%;
-}
-
-#video-block {
-  width: 70%;
-  margin: 0 auto;
-}
-
-@media only screen and (max-width: 800px) {
-  header {
-    text-align: center;
-  }
-
-  nav {
-    margin: 0;
-    justify-content: center;
-  }
-
-  #hero div {
-    width: 100%;
-  }
-
-  #hero {
-    flex-direction: column;
-  }
-
-  .hero-image {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .intro-text {
-    align-items: center;
-  }
-
-  a:hover {
-    animation: none;
-  }
-
-  footer div a img:hover {
-    animation: none;
-  }
-
-  .about img {
-    width: 90%;
-  }
-
-  #video-block {
-    width: 90%;
-  }
-
-  h2 {
-    text-align: center;
-  }
-
-  .contact p:first-of-type {
-    text-align: center;
-    margin: 3rem 0 0 0;
-  }
-
-  form {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  nav {
-    flex-direction: column;
-  }
-
-  .nav-item {
-    margin: 0;
-  }
-
-  h1 {
-    padding: 0;
-  }
-
-  p {
-    text-align: center;
-  }
-
-  .about img {
-    width: 100%;
-  }
-
-  #video-block {
-    width: 100%;
   }
 }
 
