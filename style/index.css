@@ -280,8 +280,9 @@ header nav a:hover {
 } */
 
 * {
-  font-family: "Nanum Gothic", sans-serif;
   box-sizing: border-box;
+  max-width: 100%;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 html {
@@ -303,18 +304,16 @@ header {
 nav {
   display: flex;
   flex-flow: row wrap;
-  margin: 0 0 0 5rem;
-  align-items: center;
-  justify-content: flex-start;
+  margin-left: 1rem;
 }
 
-.nav-item {
+nav a {
   display: flex;
   font-size: 2rem;
   background: white;
   text-decoration: none;
   color: #8380b6;
-  margin: 2rem 0rem;
+  margin-bottom: 1rem;
   width: 12rem;
   height: 4rem;
   align-items: center;
@@ -356,7 +355,6 @@ a,
 p {
   font-size: 1.6rem;
   width: 90%;
-  text-align: flex-start;
   margin: 1rem 0 0 0;
   text-decoration: none;
   color: rgb(70, 66, 66);
@@ -625,3 +623,45 @@ footer div a img:hover {
     width: 100%;
   }
 }
+
+/*RESPONSIVE CSS*/
+
+/*Max width of 800px*/
+@media (max-width: 800px) {
+  h1 {
+    font-size: 6rem;
+    text-align: center;
+  }
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #hero {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  #hero img {
+    height: 50%;
+    padding-top: 3rem;
+  }
+  #hero div {
+    padding: 0;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  .portfolio {
+    width: 90%;
+  }
+  .image-caption p {
+    width: 35%;
+  }
+  .image-caption img {
+    height: 30rem;
+  }
+}
+
+/*Max Width of 500px*/
