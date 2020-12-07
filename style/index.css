@@ -404,7 +404,8 @@ a:hover {
 
 #hero {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
+  align-items: flex-end;
 }
 
 #hero div {
@@ -419,10 +420,6 @@ a:hover {
   padding-bottom: 200px;
 }
 
-#hero-2 {
-  display: flex;
-  flex-flow: column wrap;
-}
 .intro-text {
   display: flex;
   flex-flow: column wrap;
